@@ -1,0 +1,6 @@
+smtp_server: "smtp.gmail.com"
+smtp_port: 587
+email_user: "jaiswaladi246@gmail.com"
+email_pass: "wkfv oogv arae xiyl"
+alert_recipient: "devopsshack23@gmail.com"
+
