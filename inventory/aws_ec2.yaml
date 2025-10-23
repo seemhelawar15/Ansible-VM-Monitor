@@ -2,7 +2,7 @@ plugin: amazon.aws.aws_ec2
 regions:
   - ap-south-1
 filters:
-  tag:Environment: dev
+  tag:Environment: monitor
   instance-state-name: running
 compose:
   ansible_host: public_ip_address
