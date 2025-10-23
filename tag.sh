@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Fetch instance IDs that match Environment=dev and Role=web
+# Fetch instance IDs that match Environment=monitor and Role=web
 instance_ids=$(aws ec2 describe-instances \
-  --filters "Name=tag:Environment,Values=dev" "Name=instance-state-name,Values=running" \
+  --filters "Name=tag:Environment,Values=monitor" "Name=instance-state-name,Values=running" \
   --query 'Reservations[*].Instances[*].InstanceId' \
   --output text)
 
