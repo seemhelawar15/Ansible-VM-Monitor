@@ -1,6 +1,6 @@
 smtp_server: "smtp.gmail.com"
 smtp_port: 587
-email_user: "--"
+email_user: "seemahelawar15@gmail.com"
 email_pass: "--"
-alert_recipient: "--"
+alert_recipient: "arunsvp02@gmail.com"
 
