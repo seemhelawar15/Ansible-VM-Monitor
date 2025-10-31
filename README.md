@@ -18,7 +18,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 aws configure
 
-**3#Create a Tagging Script for tagging the ec2 instances:**
+**3 #Create a Tagging Script for tagging the ec2 instances:**
 
 #!/bin/bash
 
@@ -49,6 +49,7 @@ done
 **4 #Create config file for host checking of inventory file**
 
 ansible.cfg
+
 [defaults]
 inventory = ./inventory/aws_ec2.yaml
 host_key_checking = False
@@ -60,6 +61,7 @@ ssh_args = -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
 **5 #Dynamic Inventory**
 
 vi inventory/aws_ec2.yaml 
+
 plugin: amazon.aws.aws_ec2
 regions:
   - ap-south-1
